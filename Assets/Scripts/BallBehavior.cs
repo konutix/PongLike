@@ -12,10 +12,4 @@ public class BallBehavior : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().AddForce(StartForce);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

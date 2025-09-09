@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 515783468}
   - component: {fileID: 515783467}
   m_Layer: 0
-  m_Name: Wall_l
+  m_Name: Wall_player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,6 +327,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561235157}
+  - component: {fileID: 561235158}
+  - component: {fileID: 561235159}
   m_Layer: 0
   m_Name: EnemyRacket
   m_TagString: Untagged
@@ -350,6 +352,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561235158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561235156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d338c869d114d5142b110b7bf9b43eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  hp: 0
+  maxStamina: 50
+  stamina: 0
+  coins: 0
+  exp: 0
+--- !u!114 &561235159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561235156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0aa4e0f9840b242a1cf74b6596d18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xStartPos: 4
 --- !u!1 &1130629863
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217586529}
+  - component: {fileID: 1217586531}
   - component: {fileID: 1217586530}
   m_Layer: 0
   m_Name: PlayerRacket
@@ -621,6 +655,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xStartPos: -4
+--- !u!114 &1217586531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217586528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d338c869d114d5142b110b7bf9b43eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  hp: 100
+  maxStamina: 50
+  stamina: 50
+  coins: 0
+  exp: 0
 --- !u!1 &1229217891
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +685,7 @@ GameObject:
   - component: {fileID: 1229217893}
   - component: {fileID: 1229217892}
   m_Layer: 0
-  m_Name: Wall_r
+  m_Name: Wall_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,7 +909,7 @@ GameObject:
   - component: {fileID: 1706132212}
   - component: {fileID: 1706132213}
   m_Layer: 0
-  m_Name: BallBody
+  m_Name: TheBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
